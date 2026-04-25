@@ -1,0 +1,122 @@
+body{
+    background-color: rgb(58, 58, 58);
+    margin: 0px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;/*tarayıcının tamamını kaplar*/
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.seat{
+    font-size: 50px;
+    margin: 6px;
+    color: aliceblue;
+}
+.seat:not(.full):hover{
+    transform: scale(1.2);/*üzerine gelindiğinde büyüme sağlar*/
+}
+.title{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.movieMain{
+    margin-top: 15px;
+}
+#selectMovie{
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/*koltuk statüleri*/
+
+.seatStatusMain{
+    margin-top: 20px;
+}
+.emptySeat{
+    color: aliceblue;
+    font-size: 20px;
+}
+.selectedSeat{
+    color: rgb(199, 248, 5);
+    font-size: 20px;
+}
+.fullSeat{
+    color: rgb(248, 5, 5);
+    font-size: 20px;
+}
+.seatStatusMain > .row >div{
+    margin-right: 10px;
+}
+
+/*sonuç metni*/
+.resultTextMain{
+    margin-top: 5px;
+}
+.resultTextMain > p{
+    color: aliceblue;
+    font-size: 20px;
+}
+.resultTextMain > p > span{
+    color: rgb(3, 180, 27);
+}
+
+/*butonlar*/
+.buttonMain{
+    margin-top: 10px;
+}
+#buyButton{
+    color: aliceblue;
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgb(6, 6, 178);
+}
+#clearButton{
+    color: aliceblue;
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgb(234, 9, 9);
+}
+
+/*sahne*/
+.screen{
+    width: 800px;
+    height: 300px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    box-shadow: 2px 4px 5px lightgrey;
+}
+.screenTitle{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/*koltuk renkleri*/
+.empty{
+    color: aliceblue;
+}
+.full{
+    color: rgb(248, 5, 5);
+}
+.selected{
+    color: rgb(199, 248, 5);;
+}
